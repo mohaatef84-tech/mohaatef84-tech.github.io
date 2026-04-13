@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Add cource - Personal Course Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="my-courses.html">My Courses</a></li>
+                <li><a href="add-course.html">Add Course </a></li>
+                <li><a href="contact.html">Contact us </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Add new cource</h2>
+            <form id="courseForm">
+                <div class="form-group">
+                    <label for="courseName">Cource name</label>
+                    <input type="text" id="courseName" name="courseName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="instructor">Lecturer name</label>
+                    <input type="text" id="instructor" name="instructor" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hours">Credit Hours</label>
+                    <input type="number" id="hours" name="hours" min="1" max="200" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" name="notes" placeholder="Write your notes here..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn"> Save cource </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Enjoy our website.</p>
+    </footer>
+</body>
+</html>
